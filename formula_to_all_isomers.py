@@ -38,7 +38,10 @@ def calculate_unsaturation(molecule_formula):
     """
 
     # 定义一个字典，存储每个元素对应的原子价
-    atom_value = {"C": 4, "N": 3, "O": 2, "H": 1}
+    atom_value = {
+        atom_type: molecules.calc_atom_valences([atom_type])[0]
+        for atom_type in molecule_formula.keys()
+    }
 
     # 初始化 values 列表，其中 values[0] 存储非氢原子的数量，values[1] 存储应有的氢原子数量
     values = [0, 0]

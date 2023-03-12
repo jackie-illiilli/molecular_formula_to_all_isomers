@@ -1,7 +1,7 @@
 """Defines the Markov decision process of generating a molecule.
 The problem of molecule generation as a Markov decision process, the
 state space, action space, and reward function are defined.
-Code in MolDQN 
+Code in MolDQN https://github.com/google-research/google-research/tree/master/mol_dqn
 """
 
 from __future__ import absolute_import
@@ -15,8 +15,8 @@ import itertools
 
 from rdkit import Chem
 from rdkit.Chem import Draw
-from six.moves import range
-from six.moves import zip
+# from six.moves import range
+# from six.moves import zip
 from rdkit.Chem.EnumerateStereoisomers import EnumerateStereoisomers
 
 
